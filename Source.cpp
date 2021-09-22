@@ -2,7 +2,7 @@
 
 #include "RecursiveBackTracker.h"
 
-
+//there is problem with dynamic painter.maze array
 
 int main() {
 	RecursiveBackTracker mazeGenerator(20, 20, 0, 0);
@@ -13,9 +13,9 @@ int main() {
 	bool running = true;
 	while (running) {
 		std::cout << "________________" << "\n";
-		std::cout << "q yeni labirent" << "\n";
-		std::cout << "e cikis" << "\n";
-		std::cout << "w genislik" << "\n";
+		std::cout << "q new maze" << "\n";
+		std::cout << "e exit" << "\n";
+		std::cout << "w width" << "\n";
 		std::cout << "________________" << "\n";
 		std::cin >> Choice;
 		switch (Choice)
