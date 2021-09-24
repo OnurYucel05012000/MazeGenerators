@@ -28,8 +28,11 @@ int main() {
 			break;
 		case 'w':
 			std::cin >> w;
-			mazeGenerator.width = w;
-			mazeGenerator.Start();
+			  if(w>0 && w<100)
+			  {
+			     mazeGenerator.width = w;
+			     mazeGenerator.Start();
+		          }
 			break;
 		}
 	}
