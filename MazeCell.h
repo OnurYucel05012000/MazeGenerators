@@ -4,8 +4,8 @@ class MazeCell {
 public:
 	bool visited = false;	
 	int i, j;
-	//sol,ust,sag,alt
-	//walls[0]=>sol
+	//left,top,right,bottom
+	//walls[0]=>left
 	bool walls[4] = { true,true,true,true };
 	char color = 177;
 
